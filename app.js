@@ -1,5 +1,5 @@
 var url="api.openweathermap.org/data/2.5/weather?q=" 
-var api=""
+var api="73f87fca15700047cf018b0214ea9bd3"
 
 var input = document.querySelector(".search-bar")
 var button = document.querySelector(".btn-go")
