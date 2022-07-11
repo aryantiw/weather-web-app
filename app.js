@@ -26,7 +26,7 @@ function clickHandler()
 {
     var inputtext= input.value
 
-    //fetch(serverURL(inputtext))
+    fetch(serverURL(inputtext))
     .then(response => response.json())
     .then(json => {
 
