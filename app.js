@@ -1,4 +1,4 @@
-var url="api.openweathermap.org/data/2.5/weather?q=" 
+var url="https://api.openweathermap.org/data/2.5/weather?q=" 
 var api="73f87fca15700047cf018b0214ea9bd3"
 
 var input = document.querySelector(".search-bar")
@@ -32,9 +32,9 @@ function clickHandler()
 
         city.innerText = "Weather in " + json.name
         temp.innerText = "Temp: " + json.main.temp + "°C"
-        desc.innerText = "Description: " + json.weather.description
-        humid.innerText = "Humidity: " + json.main.humidity
-        wind.innerText = "Wind Speed: " + json.wind.speed
+        desc.innerText = "Description: " + json.weather[0].main
+        humid.innerText = "Humidity: " + json.main.humidity + "%"
+        wind.innerText = "Wind Speed: " + json.wind.speed + " kmph"
 
     
 
