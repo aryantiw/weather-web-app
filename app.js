@@ -34,7 +34,7 @@ function clickHandler()
         temp.innerText = "Temp: " + json.main.temp + "°C"
         desc.innerText = "Description: " + json.weather[0].main
         humid.innerText = "Humidity: " + json.main.humidity + "%"
-        wind.innerText = "Wind Speed: " + json.wind.speed + " kmph"
+        wind.innerText = "Wind Speed: " + json.wind.speed + " m/sec"
 
     
 
